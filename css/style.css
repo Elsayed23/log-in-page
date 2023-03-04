@@ -80,6 +80,7 @@ a {
     background: transparent;
     border-bottom: solid 2px #ffffff;
     caret-color: #ffffff;
+    padding-right: 23px;
 }
 .parent span  {
     color: #ffffff;
