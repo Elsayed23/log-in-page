@@ -1,0 +1,152 @@
+body {
+    background-image: url(../image/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.parent {
+    width: 400px;
+    height: 450px;
+    border: solid #ffffff 1.5px;
+    padding: 10px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+.parent h1 {
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.inputs div {
+    position: relative;
+}
+.inputs div .md {
+    position: absolute;
+    color: #ffffff;
+    right: 0;
+    BOTTOM: calc(50% + 2px);
+}
+ .inputs div label {
+    position: relative;
+    bottom: calc(17px + 12.5px);
+    transition: .5s;
+    color: #ffffff;
+    font-size: 17.3px;
+    z-index: -1;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.inputs div:not(:last-child) {
+    margin-bottom: 20px;
+}
+.inputs input:focus {
+    outline: none;
+}
+.inputs div input {
+    width: 100%;
+    border: none;
+    color: #ffffff;
+    font-size: 17px;
+    height: 37px;
+    background: transparent;
+    border-bottom: solid 2px #ffffff;
+    caret-color: #ffffff;
+    padding-right: 23px;
+}
+.parent span  {
+    color: #ffffff;
+}
+.parent span a {
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 5px;
+}
+.parent span a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 1.8px;
+    bottom: 0;
+    background-color: #ffffff;
+    transition: .3s;
+}
+.parent span a:hover::before {
+    width: 100%;
+    left: 0;
+}
+.parent  span input {
+    margin-right: 5px;
+}
+.parent  span ~ a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 0;
+    margin-top: 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000000;
+    position: relative;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+}
+.parent  span ~ a::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .5s;
+}
+.parent  span ~ a:hover {
+    background-color: transparent;
+    color: #ffffff;
+}
+.parent  span ~ a:hover::before {
+    width: 100%;
+    left: 0;
+}
+.parent  span:last-child {
+    margin-top: 40px;
+}
+@media (max-width: 493px) {
+    .parent {
+        padding: 10px 30px;
+    }
+}
+@media (max-width: 343px) {
+    .parent {
+        padding: 10px 19px;
+    }
+}
